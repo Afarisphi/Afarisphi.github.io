@@ -3,8 +3,8 @@
 Gem::Specification.new do |spec|
   spec.name          = "moonwalk"
   spec.version       = "0.1.3"
-  spec.authors       = ["Abhinav Saxena"]
-  spec.email         = ["abhinav061@gmail.com"]
+  spec.authors       = ["Agung Fajar Risnandar"]
+  spec.email         = ["agung.afr10@gmail.com"]
 
   spec.summary       = "A fast and minimalist Jekyll theme with clean dark mode."
   spec.homepage      = "https://github.com/abhinavs/moonwalk"

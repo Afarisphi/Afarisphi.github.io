@@ -1,0 +1,227 @@
+/* =========================================================
+   Decap CMS – Proper Dark Theme (ChatGPT-style)
+   Author: custom
+   ========================================================= */
+
+/* ---------- ROOT VARIABLES ---------- */
+:root {
+  --bg-main: #0f0f10;
+  --bg-panel: #171717;
+  --bg-input: #202020;
+
+  --text-main: #e5e5e5;
+  --text-muted: #a3a3a3;
+  --text-faint: #737373;
+
+  --border: #2a2a2a;
+  --accent: #22c55e;
+  --accent-hover: #16a34a;
+
+  --danger: #ef4444;
+  --warning: #f59e0b;
+
+  --link: #60a5fa;
+}
+
+/* ---------- GLOBAL RESET ---------- */
+html {
+  color-scheme: dark;
+}
+
+body,
+.nc-app {
+  background: var(--bg-main) !important;
+  color: var(--text-main) !important;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Inter,
+    sans-serif;
+}
+
+/* Kill white leaks */
+.nc-app * {
+  border-color: var(--border) !important;
+}
+
+/* ---------- SCROLLBAR ---------- */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-main);
+}
+::-webkit-scrollbar-thumb {
+  background: #2f2f2f;
+  border-radius: 4px;
+}
+
+/* ---------- TOP BAR ---------- */
+[class*="TopBar"],
+[class*="AppHeader"],
+[class*="Toolbar"] {
+  background: var(--bg-panel) !important;
+  color: var(--text-main) !important;
+  border-bottom: 1px solid var(--border);
+}
+
+/* ---------- SIDEBAR ---------- */
+[class*="Sidebar"],
+[class*="CollectionList"] {
+  background: var(--bg-panel) !important;
+  color: var(--text-main);
+}
+
+[class*="Sidebar"] a {
+  color: var(--text-muted) !important;
+}
+[class*="Sidebar"] a:hover {
+  color: var(--text-main) !important;
+}
+
+/* ---------- MAIN CONTENT ---------- */
+main,
+[class*="CollectionMain"],
+[class*="EntryEditor"],
+[class*="EditorContainer"] {
+  background: var(--bg-main) !important;
+  color: var(--text-main) !important;
+}
+
+/* ---------- PANELS ---------- */
+[class*="Card"],
+[class*="Panel"],
+[class*="ControlContainer"] {
+  background: var(--bg-panel) !important;
+  color: var(--text-main);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+/* ---------- LABELS ---------- */
+label,
+[class*="FieldLabel"] {
+  color: var(--text-muted) !important;
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+/* ---------- INPUTS ---------- */
+input,
+textarea,
+select,
+[class*="TextControl"],
+[class*="DateControl"],
+[class*="NumberControl"] {
+  background: var(--bg-input) !important;
+  color: var(--text-main) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 6px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--text-faint);
+}
+
+/* Focus */
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: var(--accent) !important;
+}
+
+/* ---------- BUTTONS ---------- */
+button,
+[class*="Button"] {
+  background: var(--bg-input) !important;
+  color: var(--text-main) !important;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+button:hover {
+  background: #262626 !important;
+}
+
+/* Primary */
+[class*="Button"][class*="primary"],
+[class*="PublishButton"] {
+  background: var(--accent) !important;
+  border-color: var(--accent);
+  color: #052e16 !important;
+}
+
+[class*="Button"][class*="primary"]:hover {
+  background: var(--accent-hover) !important;
+}
+
+/* Danger */
+[class*="Delete"] {
+  background: transparent !important;
+  color: var(--danger) !important;
+  border-color: var(--danger) !important;
+}
+
+/* ---------- EDITOR TOOLBAR ---------- */
+[class*="Toolbar"],
+[class*="EditorToolbar"] {
+  background: var(--bg-panel) !important;
+  border-bottom: 1px solid var(--border);
+}
+
+/* ---------- MARKDOWN / RICH TEXT ---------- */
+[class*="Editor"],
+[class*="RichText"] {
+  background: var(--bg-input) !important;
+  color: var(--text-main);
+}
+
+/* ---------- PREVIEW PANE (IMPORTANT) ---------- */
+#preview-pane,
+#preview-pane * {
+  background: var(--bg-main) !important;
+  color: var(--text-main) !important;
+}
+
+#preview-pane a {
+  color: var(--link) !important;
+}
+
+/* ---------- MODALS ---------- */
+[class*="Modal"],
+[class*="Dialog"] {
+  background: var(--bg-panel) !important;
+  color: var(--text-main);
+  border: 1px solid var(--border);
+}
+
+/* ---------- DROPDOWNS ---------- */
+[class*="Dropdown"],
+[class*="Select"] {
+  background: var(--bg-panel) !important;
+  color: var(--text-main);
+  border: 1px solid var(--border);
+}
+
+/* ---------- TOAST / NOTIFICATION ---------- */
+[class*="Toast"] {
+  background: var(--bg-panel) !important;
+  color: var(--text-main);
+  border: 1px solid var(--border);
+}
+
+/* ---------- LINKS ---------- */
+a {
+  color: var(--link);
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- LAST RESORT (WHITE KILL SWITCH) ---------- */
+@media (prefers-color-scheme: dark) {
+  .nc-app * {
+    background-color: transparent;
+  }
+}

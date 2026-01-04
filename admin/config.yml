@@ -1,0 +1,41 @@
+backend:
+  name: github
+  repo: Afarisphi/Afarisphi.github.io
+  branch: main
+
+media_folder: "assets/images"
+public_folder: "/assets/images"
+
+site_url: https://afarisphi.github.io
+display_url: https://afarisphi.github.io
+
+collections:
+  - name: "posts"
+    label: "Blog Posts"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    editor:
+      preview: true
+    fields:
+      - label: "Layout"
+        name: "layout"
+        widget: "hidden"
+        default: "post"
+
+      - label: "Title"
+        name: "title"
+        widget: "string"
+
+      - label: "Author"
+        name: "author"
+        widget: "string"
+        default: "Afarisphi"
+
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+
+      - label: "Body"
+        name: "body"
+        widget: "markdown"

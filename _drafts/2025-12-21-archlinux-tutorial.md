@@ -4,6 +4,7 @@ title: "How I Installed Arch Linux in Dual Boot (UEFI + Archinstall)"
 date: 2025-12-21
 categories: linux archlinux
 tags: archlinux dualboot uefi
+published: false
 ---
 
 # How I Installed Arch Linux in Dual Boot

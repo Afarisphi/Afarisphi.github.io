@@ -1,0 +1,102 @@
+/* ===== Root ===== */
+:root {
+  --bg-main: #0f1115;
+  --bg-panel: #151922;
+  --bg-input: #1b2030;
+
+  --text-main: #e6e8ee;
+  --text-muted: #9aa4bf;
+
+  --accent: #7aa2f7;
+  --border: #2a3042;
+}
+
+/* ===== Global ===== */
+body,
+.nc-app {
+  background: var(--bg-main) !important;
+  color: var(--text-main) !important;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
+}
+
+/* ===== Sidebar ===== */
+.nc-sidebar {
+  background: var(--bg-panel) !important;
+  border-right: 1px solid var(--border);
+}
+
+.nc-sidebar a {
+  color: var(--text-muted) !important;
+}
+
+.nc-sidebar a.nc-active {
+  color: var(--accent) !important;
+}
+
+/* ===== Top Bar ===== */
+.nc-appHeader {
+  background: var(--bg-panel) !important;
+  border-bottom: 1px solid var(--border);
+}
+
+/* ===== Cards ===== */
+.nc-entryListingCard,
+.nc-entryEditor {
+  background: var(--bg-panel) !important;
+  border: 1px solid var(--border);
+}
+
+/* ===== Inputs ===== */
+input,
+textarea,
+select {
+  background: var(--bg-input) !important;
+  color: var(--text-main) !important;
+  border: 1px solid var(--border) !important;
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(--accent) !important;
+  outline: none;
+}
+
+/* ===== Labels ===== */
+label {
+  color: var(--text-muted) !important;
+}
+
+/* ===== Markdown Editor ===== */
+.nc-mdEditor,
+.nc-mdEditor textarea {
+  background: var(--bg-main) !important;
+  color: var(--text-main) !important;
+}
+
+/* ===== Buttons ===== */
+button {
+  background: var(--bg-input) !important;
+  color: var(--text-main) !important;
+  border: 1px solid var(--border) !important;
+}
+
+button:hover {
+  border-color: var(--accent) !important;
+}
+
+/* ===== Publish Button ===== */
+button.nc-publishButton {
+  background: var(--accent) !important;
+  color: #0f1115 !important;
+  border: none !important;
+}
+
+/* ===== Scrollbar ===== */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2a3042;
+  border-radius: 4px;
+}

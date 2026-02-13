@@ -45,6 +45,10 @@ Langkah-langkah troubleshooting:
 
    Setelah kalibrasi selesai, lakukan test print dari komputer untuk memastikan printer sudah normal kembali.
 
+![](/assets/images/uploads/img-20260213-wa0005.jpeg)
+
 Kesimpulan:
 
 Lampu merah berkedip pada printer Zebra GC420T umumnya disebabkan oleh pemasangan ribbon yang salah atau printer belum dikalibrasi. Dengan memastikan posisi gulungan tinta benar dan melakukan kalibrasi ulang, masalah ini biasanya dapat teratasi tanpa perlu penggantian hardware.
+
+![]()

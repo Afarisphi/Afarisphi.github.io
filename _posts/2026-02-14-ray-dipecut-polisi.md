@@ -9,3 +9,5 @@ tags:
   - Isolop
 ---
 kaowkwlwo
+
+![](/assets/images/uploads/img-20260101-wa0001.jpg)
